@@ -281,6 +281,9 @@ type Target struct {
 			MinDocCount int    `json:"min_doc_count"`
 		} `json:"settings"`
 	} `json:"bucketAggs,omitempty"`
+	
+	// For Graphite
+	Target string `json:"target,omitempty"`
 }
 
 // NewDashlist initializes panel with a dashlist panel.
